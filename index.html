@@ -4,24 +4,195 @@
   <meta charset="UTF-8" />
   <title>XelStack</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="description" content="XelStack builds thoughtful software systems designed to grow with you." />
+
   <style>
+    :root {
+      --bg: #0d1117;
+      --fg: #e6edf3;
+      --muted: #9da7b3;
+      --accent: #58a6ff;
+      --border: #30363d;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      max-width: 720px;
-      margin: 80px auto;
-      padding: 0 20px;
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: var(--sans);
       line-height: 1.6;
     }
-    h1 { font-size: 2.5rem; }
-    p { color: #444; }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    header {
+      margin-bottom: 64px;
+    }
+
+    .brand {
+      font-family: var(--mono);
+      font-size: 2.8rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .tagline {
+      margin-top: 12px;
+      font-size: 1.25rem;
+      color: var(--muted);
+    }
+
+    section {
+      margin-bottom: 56px;
+    }
+
+    h2 {
+      font-family: var(--mono);
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    p {
+      max-width: 720px;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      padding-left: 18px;
+      max-width: 720px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    code {
+      font-family: var(--mono);
+      background: #161b22;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+
+    .stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      background: #0f141b;
+    }
+
+    footer {
+      margin-top: 80px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-family: var(--mono);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
+
 <body>
-  <h1>XelStack</h1>
-  <p><strong>Thoughtful systems that grow with you.</strong></p>
-  <p>
-    XelStack builds software systems designed around real requirements,
-    with a focus on reliability, flexibility, and long-term support.
-  </p>
+  <main class="container">
+    <header>
+      <div class="brand">XelStack</div>
+      <div class="tagline">Thoughtful systems that grow with you</div>
+    </header>
+
+    <section>
+      <h2>What XelStack Does</h2>
+      <p>
+        XelStack is a personal development studio focused on building
+        custom software systems that fit real-world workflows.
+        The emphasis is on clarity, maintainability, and long-term reliability —
+        not shortcuts or generic templates.
+      </p>
+      <p>
+        Projects are approached end to end: understanding requirements,
+        designing the system, building it cleanly, and supporting it as
+        needs change over time.
+      </p>
+    </section>
+
+    <section>
+      <h2>How It’s Different</h2>
+      <ul>
+        <li>No pre-built templates forced onto your process</li>
+        <li>Systems designed to evolve instead of being rewritten</li>
+        <li>Clear communication and realistic engineering decisions</li>
+        <li>One accountable developer — no handoffs, no noise</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What Gets Built</h2>
+      <div class="stack">
+        <div class="card">
+          <strong>Web Applications</strong>
+          <p>Custom dashboards, portals, internal tools, and business apps.</p>
+        </div>
+        <div class="card">
+          <strong>APIs & Backends</strong>
+          <p>Clean, maintainable services designed for stability and growth.</p>
+        </div>
+        <div class="card">
+          <strong>System Integrations</strong>
+          <p>Third-party APIs, devices, data pipelines, and automation.</p>
+        </div>
+        <div class="card">
+          <strong>Long-Term Support</strong>
+          <p>Improvements, fixes, and evolution — not just delivery.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Philosophy</h2>
+      <p>
+        Good software should feel boring in the best way —
+        predictable, stable, and easy to build upon.
+        XelStack focuses on engineering systems that quietly do their job
+        while staying flexible enough for what comes next.
+      </p>
+    </section>
+
+    <footer>
+      <div>XelStack — Personal Development Studio</div>
+      <div>
+        Contact: <a href="mailto:xelstack.dev@gmail.com">xelstack.dev@gmail.com</a>
+        <!-- replace with your real email later -->
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
