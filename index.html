@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,51 +10,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Hero Section -->
     <header class="hero">
         <div class="container">
-            <div class="brand">
+            <div class="hero-content">
                 <h1 class="logo">XelStack</h1>
                 <p class="tagline">Thoughtful systems that grow with you</p>
-            </div>
-            <div class="hero-content">
-                <h2>What XelStack Does</h2>
-                <p class="lead">XelStack builds custom software systems shaped around real workflows, with a focus on long-term reliability and adaptability.</p>
-                
-                <div class="focus-grid">
-                    <div class="focus-item">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2"/>
-                            <path d="M3 9h18M9 21V9"/>
-                        </svg>
-                        <span>Web applications & internal tools</span>
-                    </div>
-                    <div class="focus-item">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
-                        </svg>
-                        <span>APIs, backends, and integrations</span>
-                    </div>
-                    <div class="focus-item">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 6v6l4 2"/>
-                        </svg>
-                        <span>Systems designed to evolve over time</span>
-                    </div>
-                    <div class="focus-item">
-                        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
-                        </svg>
-                        <span>Long-term support and iteration</span>
-                    </div>
+                <p class="description">Custom software systems shaped around real workflows, with a focus on long-term
+                    reliability and adaptability.</p>
+
+                <div class="focus-pills">
+                    <span class="pill">Web applications</span>
+                    <span class="pill">APIs & backends</span>
+                    <span class="pill">Long-term support</span>
+                    <span class="pill">Custom integrations</span>
                 </div>
 
-                <div class="approach">
-                    <h3>Approach</h3>
-                    <p>One developer. Clear ownership. No templates. Systems are built carefully, maintained responsibly, and designed to change without breaking.</p>
+                <div class="approach-box">
+                    <p>One developer. Clear ownership. No templates. Built carefully, maintained responsibly.</p>
                 </div>
             </div>
         </div>
@@ -63,101 +39,46 @@
     <section class="pricing-section">
         <div class="container">
             <h2 class="section-title">Core Services</h2>
-            <p class="section-subtitle">Choose the foundation that fits your needs</p>
-            
+
             <div class="pricing-grid">
-                <!-- Landing Page -->
                 <div class="pricing-card">
-                    <div class="card-header">
+                    <div class="card-top">
                         <h3>Landing Page</h3>
-                        <p class="card-subtitle">1–3 Pages Static Website</p>
+                        <span class="card-meta">1–3 pages</span>
                     </div>
-                    <div class="card-body">
-                        <ul class="features-list">
-                            <li>Responsive design</li>
-                            <li>Basic SEO optimization</li>
-                            <li>Contact form integration</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <span class="best-for">Best for: Quick online presence</span>
-                    </div>
+                    <p class="card-desc">Responsive, basic SEO, contact form</p>
                 </div>
 
-                <!-- Website -->
                 <div class="pricing-card">
-                    <div class="card-header">
+                    <div class="card-top">
                         <h3>Website</h3>
-                        <p class="card-subtitle">3–5 Pages</p>
+                        <span class="card-meta">3–5 pages</span>
                     </div>
-                    <div class="card-body">
-                        <ul class="features-list">
-                            <li>WordPress or custom build</li>
-                            <li>Brand, portfolio, or showcase</li>
-                            <li>No advanced logic</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <span class="best-for">Best for: Professional presence</span>
-                    </div>
+                    <p class="card-desc">WordPress/Custom · Brand/Portfolio/Showcase</p>
                 </div>
 
-                <!-- Business Website -->
                 <div class="pricing-card featured">
-                    <div class="badge">Popular</div>
-                    <div class="card-header">
+                    <div class="card-top">
                         <h3>Business Website</h3>
-                        <p class="card-subtitle">CMS + Admin Panel</p>
+                        <span class="card-meta">CMS + Admin</span>
                     </div>
-                    <div class="card-body">
-                        <ul class="features-list">
-                            <li>Content management system</li>
-                            <li>Blog functionality</li>
-                            <li>Analytics integration</li>
-                            <li>Admin dashboard</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <span class="best-for">Best for: Growing businesses</span>
-                    </div>
+                    <p class="card-desc">Blog, analytics, admin dashboard</p>
                 </div>
 
-                <!-- E-Commerce -->
                 <div class="pricing-card">
-                    <div class="card-header">
-                        <h3>E-Commerce Store</h3>
-                        <p class="card-subtitle">Online Store</p>
+                    <div class="card-top">
+                        <h3>E-Commerce</h3>
+                        <span class="card-meta">Online Store</span>
                     </div>
-                    <div class="card-body">
-                        <ul class="features-list">
-                            <li>Product catalog</li>
-                            <li>Shopping cart</li>
-                            <li>Single-vendor setup</li>
-                            <li>Standard checkout</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <span class="best-for">Best for: Selling online</span>
-                    </div>
+                    <p class="card-desc">Product catalog, cart, standard checkout</p>
                 </div>
 
-                <!-- Custom Portal -->
-                <div class="pricing-card premium">
-                    <div class="card-header">
-                        <h3>Custom Web Portal</h3>
-                        <p class="card-subtitle">Tailored Solutions</p>
+                <div class="pricing-card">
+                    <div class="card-top">
+                        <h3>Custom Portal</h3>
+                        <span class="card-meta">Tailored</span>
                     </div>
-                    <div class="card-body">
-                        <ul class="features-list">
-                            <li>Custom workflows</li>
-                            <li>Advanced integrations</li>
-                            <li>Bespoke functionality</li>
-                            <li>Billed separately</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <span class="best-for">Best for: Complex requirements</span>
-                    </div>
+                    <p class="card-desc">Custom workflows & integrations</p>
                 </div>
             </div>
         </div>
@@ -166,124 +87,61 @@
     <!-- Add-ons Section -->
     <section class="addons-section">
         <div class="container">
-            <h2 class="section-title">Extend Your System</h2>
-            <p class="section-subtitle">Modular add-ons to enhance functionality</p>
-            
-            <div class="addons-grid">
-                <div class="addon-category">
-                    <h3 class="category-title">Communication & Support</h3>
-                    <div class="addon-list">
-                        <div class="addon-item">
-                            <span class="addon-icon">💬</span>
-                            <span class="addon-name">WhatsApp Chat / API Integration</span>
-                        </div>
-                        <div class="addon-item">
-                            <span class="addon-icon">🤖</span>
-                            <span class="addon-name">Support Bot</span>
-                        </div>
-                        <div class="addon-item">
-                            <span class="addon-icon">📧</span>
-                            <span class="addon-name">Custom Email Setup</span>
-                        </div>
-                        <div class="addon-item">
-                            <span class="addon-icon">🎫</span>
-                            <span class="addon-name">Ticketing / Support System</span>
-                        </div>
+            <h2 class="section-title">Add-ons & Extensions</h2>
+
+            <div class="addons-compact">
+                <div class="addon-group">
+                    <h3>Communication</h3>
+                    <div class="addon-items">
+                        <span class="addon">WhatsApp Chat / API</span>
+                        <span class="addon">Support Bot</span>
+                        <span class="addon">Custom Email</span>
+                        <span class="addon">Ticketing System</span>
                     </div>
                 </div>
 
-                <div class="addon-category">
-                    <h3 class="category-title">Admin & Management</h3>
-                    <div class="addon-list">
-                        <div class="addon-item">
-                            <span class="addon-icon">⚙️</span>
-                            <span class="addon-name">CMS / Admin Panel / Dashboard</span>
-                        </div>
-                        <div class="addon-item">
-                            <span class="addon-icon">👥</span>
-                            <span class="addon-name">Multi-User Login</span>
-                        </div>
-                        <div class="addon-item">
-                            <span class="addon-icon">🔐</span>
-                            <span class="addon-name">Multi-User Roles & Permissions</span>
-                        </div>
-                        <div class="addon-item">
-                            <span class="addon-icon">📊</span>
-                            <span class="addon-name">Advanced Reports</span>
-                        </div>
+                <div class="addon-group">
+                    <h3>Admin & Management</h3>
+                    <div class="addon-items">
+                        <span class="addon">CMS / Admin Panel</span>
+                        <span class="addon">Multi-user Login</span>
+                        <span class="addon">Roles & Permissions</span>
+                        <span class="addon">Advanced Reports</span>
                     </div>
                 </div>
 
-                <div class="addon-category">
-                    <h3 class="category-title">Security & Authentication</h3>
-                    <div class="addon-list">
-                        <div class="addon-item">
-                            <span class="addon-icon">🔒</span>
-                            <span class="addon-name">2FA Authentication</span>
-                        </div>
-                        <div class="addon-item">
-                            <span class="addon-icon">📱</span>
-                            <span class="addon-name">SMS / OTP Authentication</span>
-                        </div>
-                        <div class="addon-item">
-                            <span class="addon-icon">🛡️</span>
-                            <span class="addon-name">SSL Certificate Integration</span>
-                            <span class="addon-note">CA fees paid separately</span>
-                        </div>
+                <div class="addon-group">
+                    <h3>Security</h3>
+                    <div class="addon-items">
+                        <span class="addon">2FA Authentication</span>
+                        <span class="addon">SMS / OTP Auth</span>
+                        <span class="addon">SSL Certificate <span class="note">CA fees separate</span></span>
                     </div>
                 </div>
 
-                <div class="addon-category">
-                    <h3 class="category-title">Payments & Commerce</h3>
-                    <div class="addon-list">
-                        <div class="addon-item">
-                            <span class="addon-icon">💳</span>
-                            <span class="addon-name">Payment Gateway Integration</span>
-                        </div>
+                <div class="addon-group">
+                    <h3>Payments</h3>
+                    <div class="addon-items">
+                        <span class="addon">Payment Gateway</span>
                     </div>
                 </div>
 
-                <div class="addon-category">
-                    <h3 class="category-title">Integrations & Extensions</h3>
-                    <div class="addon-list">
-                        <div class="addon-item">
-                            <span class="addon-icon">🔗</span>
-                            <span class="addon-name">Third-Party API Integration</span>
-                        </div>
-                        <div class="addon-item">
-                            <span class="addon-icon">📲</span>
-                            <span class="addon-name">WhatsApp Business API</span>
-                        </div>
-                        <div class="addon-item">
-                            <span class="addon-icon">☁️</span>
-                            <span class="addon-name">Cloud Services Integration</span>
-                            <span class="addon-note">Complexity-based pricing</span>
-                        </div>
-                        <div class="addon-item">
-                            <span class="addon-icon">🌐</span>
-                            <span class="addon-name">IoT / Biometric Attendance</span>
-                        </div>
+                <div class="addon-group">
+                    <h3>Integrations</h3>
+                    <div class="addon-items">
+                        <span class="addon">Third-party APIs</span>
+                        <span class="addon">WhatsApp Business API</span>
+                        <span class="addon">Cloud Services <span class="note">complexity-based</span></span>
+                        <span class="addon">IoT / Biometric</span>
                     </div>
                 </div>
 
-                <div class="addon-category">
-                    <h3 class="category-title">Custom Development</h3>
-                    <div class="addon-list">
-                        <div class="addon-item">
-                            <span class="addon-icon">✨</span>
-                            <span class="addon-name">New Features / Functions / Modules</span>
-                            <span class="addon-note">Complexity-based pricing</span>
-                        </div>
-                        <div class="addon-item">
-                            <span class="addon-icon">📦</span>
-                            <span class="addon-name">Data Migration</span>
-                            <span class="addon-note">Complexity-based pricing</span>
-                        </div>
-                        <div class="addon-item">
-                            <span class="addon-icon">📱</span>
-                            <span class="addon-name">Mobile Client Development</span>
-                            <span class="addon-note">Native vs hybrid, screens, backend readiness</span>
-                        </div>
+                <div class="addon-group">
+                    <h3>Custom Development</h3>
+                    <div class="addon-items">
+                        <span class="addon">New Features/Modules <span class="note">complexity-based</span></span>
+                        <span class="addon">Data Migration <span class="note">complexity-based</span></span>
+                        <span class="addon">Mobile Client <span class="note">native/hybrid</span></span>
                     </div>
                 </div>
             </div>
@@ -294,74 +152,37 @@
     <section class="ongoing-section">
         <div class="container">
             <h2 class="section-title">Ongoing Services</h2>
-            <p class="section-subtitle">Keep your system secure, updated, and running smoothly</p>
-            
+
             <div class="ongoing-grid">
-                <!-- Maintenance -->
                 <div class="ongoing-card">
-                    <div class="ongoing-header">
-                        <svg class="ongoing-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                        </svg>
-                        <h3>Maintenance Contracts</h3>
-                        <span class="optional-badge">Optional</span>
-                    </div>
-                    <p class="ongoing-description">Regular updates, bug fixes, and system monitoring to ensure optimal performance</p>
+                    <h3>Maintenance Contracts <span class="opt">Optional</span></h3>
+                    <p>Updates, fixes, monitoring</p>
                 </div>
 
-                <!-- Security Audits -->
                 <div class="ongoing-card">
-                    <div class="ongoing-header">
-                        <svg class="ongoing-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                        </svg>
-                        <h3>Security Audits</h3>
-                    </div>
-                    <p class="ongoing-description">Third-party security audits to identify vulnerabilities and ensure compliance</p>
+                    <h3>Security Audits</h3>
+                    <p>Third-party security audit for website</p>
                 </div>
             </div>
 
-            <!-- Recurring Services -->
-            <div class="recurring-section">
-                <h3 class="recurring-title">Recurring & Renewals</h3>
-                <p class="recurring-subtitle">Provider-dependent services billed separately</p>
-                
-                <div class="recurring-list">
+            <div class="recurring-box">
+                <h3>Recurring & Renewals</h3>
+                <div class="recurring-grid">
                     <div class="recurring-item">
-                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        <div class="recurring-content">
-                            <span class="recurring-name">Hosting + Domain Registration</span>
-                            <span class="recurring-note">Provider-dependent</span>
-                        </div>
+                        <span>Hosting + Domain</span>
+                        <span class="rec-note">Provider-dependent</span>
                     </div>
                     <div class="recurring-item">
-                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        <div class="recurring-content">
-                            <span class="recurring-name">SMS / OTP Authentication</span>
-                            <span class="recurring-note">Provider-dependent</span>
-                        </div>
+                        <span>SMS / OTP Auth</span>
+                        <span class="rec-note">Provider-dependent</span>
                     </div>
                     <div class="recurring-item">
-                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        <div class="recurring-content">
-                            <span class="recurring-name">WhatsApp Business / Email Integration</span>
-                            <span class="recurring-note">Provider-dependent</span>
-                        </div>
+                        <span>WhatsApp / Email</span>
+                        <span class="rec-note">Provider-dependent</span>
                     </div>
                     <div class="recurring-item">
-                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        <div class="recurring-content">
-                            <span class="recurring-name">Third-Party API Services</span>
-                            <span class="recurring-note">Provider-dependent</span>
-                        </div>
+                        <span>Third-party APIs</span>
+                        <span class="rec-note">Provider-dependent</span>
                     </div>
                 </div>
             </div>
@@ -371,17 +192,17 @@
     <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
-            <h2>Let's Build Something Together</h2>
-            <p>Ready to discuss your project? Get in touch.</p>
-            <a href="mailto:xelstack.dev@gmail.com" class="contact-button">xelstack.dev@gmail.com</a>
+            <div class="contact-content">
+                <h2>Ready to build something robust?</h2>
+                <p class="description">Let's discuss your requirements and how we can bring your vision to life.</p>
+                <a href="mailto:xelstack.dev@gmail.com" class="email-link">xelstack.dev@gmail.com</a>
+            </div>
+
+            <footer class="footer-inline">
+                <p>XelStack · 2025</p>
+            </footer>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 XelStack. Thoughtful systems that grow with you.</p>
-        </div>
-    </footer>
 </body>
+
 </html>
